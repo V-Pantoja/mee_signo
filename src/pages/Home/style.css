@@ -1,0 +1,97 @@
+body {
+   background: #020300;
+
+   height: 100vh;
+   
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.8rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+main {
+   height: 100%;
+
+   display: flex;
+}
+
+img {
+   background-image: url("./img/wallpaper-signos01.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#formSigno {
+   background: white;
+
+   padding: 1rem 4rem;
+
+   width: 60rem;
+   height: 60rem;
+
+   border: 5px solid #020300cb;
+   border-radius: 1rem;
+
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 12rem auto 6rem;
+   grid-template-areas: 
+      "logo logo"
+      "box1 box2"
+      "btn btn"
+   ;
+   row-gap: 3rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#logo {
+  grid-area: logo;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+   width: 20rem;
+   height: 20rem;
+
+   position:relative;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#box1 {
+  grid-area: box1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#box2 {
+  grid-area: box2;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#btn {
+  grid-area: btn;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn button {
+   width: 12rem;
+   height: 4rem;
+}
