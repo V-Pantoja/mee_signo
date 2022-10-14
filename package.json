@@ -2,9 +2,7 @@
   "name": "signoapp",
   "private": true,
   "version": "0.0.0",
-
   "homepage": "mee_signo/",
-
   "type": "module",
   "scripts": {
     "dev": "vite",
