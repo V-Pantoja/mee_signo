@@ -6,13 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mee Signo</title>
 
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- arquivos -->
+    <link rel="stylesheet" href="./styles/global.css">
+
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="container">
+
+      <form id="form-signo" action="">
+        <div id="box1">
+          <label for="txt-nome">Nome Completo: </label>
+          <label for="data-nasc">Data de Nascimento:</label>   
+        </div>
+        <div id="box2">
+          <input id="txt-nome" name="txt-nome" type="text" />
+          <input id="data-nasc" name="data-nasc" type="date" />
+        </div>
+
+        <div id="btn">
+          <a href="./pagina.php"> Verificar Signo</a>
+        </div>
+      </form>
+
+      <div id="cards"></div>
+
+      <footer>
+        footer
+      </footer>
+    </div>
+
+    <script src="./scripts/btn-verificar.js"></script>
+
   </body>
 </html>
