@@ -104,7 +104,10 @@ function verificarSigno() {
       }
    ]
 
-   let txtSub = document.createElement('h2');
+   let txtNome = document.createElement('h2');
+   txtNome.textContent = `${nome}`;
+
+   let txtSub = document.createElement('h5');
    let paragrafo = document.createElement('p');
 
    if (dia >= 21  && mes == 03 || dia <= 19 && mes == 04) {
@@ -156,6 +159,7 @@ function verificarSigno() {
       paragrafo.textContent = `${signos[11].descricao}`;
    }
 
+   cardSigno.appendChild(txtNome);
    cardSigno.appendChild(txtSub);
    cardSigno.appendChild(paragrafo);
 

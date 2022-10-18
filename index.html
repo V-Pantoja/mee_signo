@@ -20,27 +20,29 @@
     <div id="container">
 
       <main>
-        <div id="box1">
-          <label for="txt-nome">Nome Completo: </label>
-          <label for="dia">Dia:</label>   
-          <label for="mes">Mês:</label>   
-        </div>
-        <div id="box2">
+  
+        <div id="boxNome">
+          <label for="txt-nome">Nome Completo: </label><br />
           <input id="txt-nome" name="txt-nome" type="text" />
-          <input id="dia" name="dia" type="number" />
-          <input id="mes" name="mes" type="number" />
         </div>
+        <div id="box">
+          <div class="boxDM">
+            <label for="dia">Dia:</label>
+            <input id="dia" name="dia" type="number" />
+          </div>
+          <div class="boxDM">
+            <label for="mes">Mês:</label>
+            <input id="mes" name="mes" type="number" />
+          </div>
+        </div>
+        
 
         <div id="btn">
           <button onclick="verificarSigno()"> Verificar Signo</button>
         </div>
       </main>
 
-      <div id="card-signo"></div>
-
-      <footer>
-        footer
-      </footer>
+      <div id="card-signo"> Signo aqui! </div>
     </div>
 
     <script src="./script.js"></script>
