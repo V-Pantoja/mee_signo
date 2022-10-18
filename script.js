@@ -120,10 +120,10 @@ function verificarSigno() {
       ]
 
       // criando elementos para receber os valores do usuario
-      let txtNome = document.createElement('h2');
+      let txtNome = document.createElement('h5');
       txtNome.textContent = `${nome}`;
 
-      let txtSub = document.createElement('h5');
+      let txtSub = document.createElement('h2');
       let paragrafo = document.createElement('p');
 
       // verificando o periodo da data para saber qual signo será e adicionando as informacoes nos elementos criados

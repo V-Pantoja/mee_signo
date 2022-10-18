@@ -89,3 +89,8 @@ button {
    flex-direction: column;
    justify-content: center;
 }
+
+#card-signo p {
+   text-align: justify;
+   text-decoration: dotted;
+}
