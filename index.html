@@ -23,26 +23,28 @@
   
         <div id="boxNome">
           <label for="txt-nome">Nome Completo: </label><br />
-          <input id="txt-nome" name="txt-nome" type="text" />
+          <input id="txt-nome" name="txt-nome" type="text" tabindex="1" />
         </div>
         <div id="box">
           <div class="boxDM">
             <label for="dia">Dia:</label>
-            <input id="dia" name="dia" type="number" />
+            <input id="dia" name="dia" type="number" tabindex="2"/>
           </div>
           <div class="boxDM">
             <label for="mes">Mês:</label>
-            <input id="mes" name="mes" type="number" />
+            <input id="mes" name="mes" type="number" tabindex="3" />
           </div>
         </div>
         
 
         <div id="btn">
-          <button onclick="verificarSigno()"> Verificar Signo</button>
+          <button onclick="verificarSigno()" tabindex="4" > Verificar Signo</button>
         </div>
       </main>
 
-      <div id="card-signo"> Signo aqui! </div>
+      <div id="card-signo">
+        <p>Insira seu nome e data de nascimento para saber de qual signo você é ;)</p>
+      </div>
     </div>
 
     <script src="./script.js"></script>

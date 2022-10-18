@@ -20,8 +20,9 @@ body {
 main {
    grid-area: main;
 
-   background: rgba(0, 0, 0, 0.801);
-   padding: 4rem 10rem 4rem 4rem;
+   background: #131112;
+   
+   padding: 4rem;
    
    display: flex;
    flex-direction: column;
@@ -62,22 +63,26 @@ input {
 }
 
 button {
+   background-color: #08A045;
+
    width: 20rem;
    height: 5rem;
 
    font-size: 2.2rem;
    font-weight: 700;
-   color: green;
+   color: #FFFFFF;
 
    border: none;
    border-radius: 0.4rem;
+   
+   cursor: pointer;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - */
 #card-signo {
    grid-area: card;
 
-   background: red;
+   background: #60656F;
    padding: 15rem;
 
    display: flex;
