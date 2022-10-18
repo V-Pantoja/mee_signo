@@ -13,34 +13,37 @@
 
     <!-- arquivos -->
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
 
   </head>
   <body>
     <div id="container">
 
-      <form id="form-signo" action="">
+      <main>
         <div id="box1">
           <label for="txt-nome">Nome Completo: </label>
-          <label for="data-nasc">Data de Nascimento:</label>   
+          <label for="dia">Dia:</label>   
+          <label for="mes">Mês:</label>   
         </div>
         <div id="box2">
           <input id="txt-nome" name="txt-nome" type="text" />
-          <input id="data-nasc" name="data-nasc" type="date" />
+          <input id="dia" name="dia" type="number" />
+          <input id="mes" name="mes" type="number" />
         </div>
 
         <div id="btn">
-          <a href="./pagina.php"> Verificar Signo</a>
+          <button onclick="verificarSigno()"> Verificar Signo</button>
         </div>
-      </form>
+      </main>
 
-      <div id="cards"></div>
+      <div id="card-signo"></div>
 
       <footer>
         footer
       </footer>
     </div>
 
-    <script src="./scripts/btn-verificar.js"></script>
+    <script src="./script.js"></script>
 
   </body>
 </html>
