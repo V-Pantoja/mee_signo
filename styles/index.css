@@ -1,6 +1,6 @@
 body {
    font-family: 'Roboto', sans-serif;
-   font-size: 2.5rem;
+   font-size: 1.8rem;
 
    color: white;
 
@@ -8,31 +8,63 @@ body {
 }
 
 #container {
+   background: #FFFFFF;
    height: 100%;
 
    display: grid;
-   grid-template-areas: "main card";
-   grid-template-columns: 30% 70%;
-   grid-template-rows: 1fr;
+   grid-template-areas: 
+      /*colum1 colum2 colum3*/
+      "header header header"
+      "undefined1 main undefined2"
+      "footer footer footer"
+   ;
+   grid-template-columns: 20rem 5fr 20rem;
+   grid-template-rows:
+      /*Um valor para cada linha (cima para baixo)*/
+      auto minmax(55rem, 1fr) 10rem
+   ;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - */
-main {
-   grid-area: main;
+header {
+   grid-area: header;
+   background: #0d0c0c;
 
-   background: #131112;
-   
-   padding: 4rem;
-   
+   display: grid;
+   grid-template-areas:
+      "undefined1 hgroup undefined2"
+      "undefined1 section undefined2"
+   ;
+   grid-template-columns: 20rem 5fr 20rem;
+   grid-template-rows: 5rem 8rem;
+}
+
+hgroup {
+   grid-area: hgroup;
+
+   padding: 1rem 0;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+section {
+   grid-area: section;
+   background: blue;
+
    display: flex;
-   flex-direction: column;
-   justify-content: center;
+
+
+   /*
+   
+   
+   Parei aquii! 
+   
+   
+   */
 }
 
 input {
-   margin-top: 1rem;
-   height: 4rem;
-   width: 8rem;
+   height: 2.5rem;
+   width: 5rem;
    padding: 0.5rem 1.5rem;
 
    font-size: 1.8rem;
@@ -42,55 +74,15 @@ input {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - */
-#boxNome {
-   margin-bottom: 3rem;
-}
-
-#boxNome input {
-   width: 100%;
-}
-
-#box {
-   margin-bottom: 10rem;
-
-   display: flex;
-   justify-content: space-between;
+main {
+   grid-area: main;
+   background: red;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - */
-#btn {
-   margin: 0 auto;
-}
+footer {
+   grid-area: footer;
+   background: #0d0c0c;
 
-button {
-   background-color: #08A045;
-
-   width: 20rem;
-   height: 5rem;
-
-   font-size: 2.2rem;
-   font-weight: 700;
-   color: #FFFFFF;
-
-   border: none;
-   border-radius: 0.4rem;
-   
-   cursor: pointer;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - - */
-#card-signo {
-   grid-area: card;
-
-   background: #60656F;
-   padding: 15rem;
-
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
-
-#card-signo p {
-   text-align: justify;
-   text-decoration: dotted;
+   padding: 1rem 20rem;
 }

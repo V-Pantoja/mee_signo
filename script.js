@@ -1,7 +1,6 @@
 function verificarSigno() {
 
    // pegando os elementos da pagina
-   let nome = document.getElementById('txt-nome').value;
    let dia = Number(document.getElementById('dia').value);
    let mes = Number(document.getElementById('mes').value);
    let cardSigno = document.getElementById('card-signo');
@@ -120,9 +119,6 @@ function verificarSigno() {
       ]
 
       // criando elementos para receber os valores do usuario
-      let txtNome = document.createElement('h5');
-      txtNome.textContent = `${nome}`;
-
       let txtSub = document.createElement('h2');
       let paragrafo = document.createElement('p');
 
@@ -177,7 +173,6 @@ function verificarSigno() {
       }
 
       // colocando os resultados na div para ser exibido
-      cardSigno.appendChild(txtNome);
       cardSigno.appendChild(txtSub);
       cardSigno.appendChild(paragrafo);
    }
