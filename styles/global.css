@@ -6,5 +6,11 @@
 }
 
 :root{
+
+   /* Colors - - - - - - - - - */
+   --blue-ocean: #00c6ff;
+   --fantasma-branco: #fafaff;
+   /* - - - - - - - - - - - - -*/
+
    font-size: 62.5%; /* 1rem = 10px */
 }
